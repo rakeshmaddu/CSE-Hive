@@ -120,6 +120,7 @@ plugins:
   #     cache_safe: true
   # - awesome-pages
   - offline
+
   
   
   - search:
