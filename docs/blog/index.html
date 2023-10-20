@@ -48,16 +48,47 @@
             font-size: 2rem;
         }
     }
+
+    .back-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        background-color: #2C2C2C;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 1000;
+        transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+        background-color: #444;
+    }
 </style>
 </head>
 <body>
 
 <div id="particles-js"></div>
+<button class="back-button" onclick="goBack()">Go Back</button>
 
 <div class="content">
     <h1>Coming Soon</h1>
     <p>We are working on something awesome. Stay tuned!</p>
 </div>
+<script>
+ function goBack() {
+        if (document.referrer) {
+            window.history.back();
+        } else {
+            window.location.href = "/";  // replace with your fallback URL
+        }
+    }
+</script>
+
+
 
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
