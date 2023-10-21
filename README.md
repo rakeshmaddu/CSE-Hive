@@ -1,4 +1,4 @@
 # Notesapp
 
 Online Version
-https://sanjaybandaru-edu.github.io/College-Hive/
+https://collegehive.in
