@@ -120,6 +120,8 @@ plugins:
   #     cache_safe: true
   # - awesome-pages
   - offline
+  # - optimize
+  - minify
 
   
   
