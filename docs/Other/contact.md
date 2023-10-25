@@ -9,6 +9,11 @@
 
 <!-- keep linkedin icon  and on the click it should redirect to my page -->
 [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn ](https://www.linkedin.com/in/sanjay-bandaru)
+<!-- make for email -->
+[![Email](https://pluspng.com/img-png/email-icon-png-email-icon-image-122-2400.png){width=3%} Email ](mailto:sanjay@collegehive.in) : sanjay@collegehive.in
+
+#### Contact Collegehive
+[![Email](https://pluspng.com/img-png/email-icon-png-email-icon-image-122-2400.png){width=3%} Email ](mailto:contact@collegehive.in) : contact@collegehive.in
 
 
 
