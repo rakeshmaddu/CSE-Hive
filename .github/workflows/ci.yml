@@ -27,6 +27,7 @@ jobs:
       # - run: pip install mkdocs-video # not important
       # - run: pip install mkdocs-plotly-plugin 
       - run: pip install mike
+      - run: pip install mkdocs-charts-plugin
       # minify
       # - run: pip install mkdocs-minify-plugin
       - run: mkdocs gh-deploy --force
