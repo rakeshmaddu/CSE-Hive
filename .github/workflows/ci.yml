@@ -31,3 +31,6 @@ jobs:
       # minify
       # - run: pip install mkdocs-minify-plugin
       - run: mkdocs gh-deploy --force
+
+# Custom domain
+      - run: echo "collegehive.in" > ./site/CNAME && gh-pages -d site
