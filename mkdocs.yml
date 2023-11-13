@@ -134,24 +134,24 @@ plugins:
   #     cache_safe: true
   # - awesome-pages
   - offline
-  - kroki:
-      kroki_url: https://kroki.io
-      kroki_theme: default
-      kroki_diagrams:
-        - blockdiag
-        - bpmn
-        - bytefield
-        - ditaa
-        - erd
-        - excalidraw
-        - graphviz
-        - mermaid
-        - nomnoml
-        - packetdiag
-        - plantuml
-        - seqdiag
-        - svgbob
-        - umlet
+  # - kroki:
+  #     kroki_url: https://kroki.io
+  #     kroki_theme: default
+  #     kroki_diagrams:
+  #       - blockdiag
+  #       - bpmn
+  #       - bytefield
+  #       - ditaa
+  #       - erd
+  #       - excalidraw
+  #       - graphviz
+  #       - mermaid
+  #       - nomnoml
+  #       - packetdiag
+  #       - plantuml
+  #       - seqdiag
+  #       - svgbob
+  #       - umlet
 
   
   
