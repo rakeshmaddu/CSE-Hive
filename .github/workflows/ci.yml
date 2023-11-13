@@ -33,4 +33,4 @@ jobs:
       - run: mkdocs gh-deploy --force
 
 # Custom domain
-      - run: echo "collegehive.in" > ./site/CNAME && gh-pages -d site
+      - run: echo "collegehive.in" > ./site/CNAME 
