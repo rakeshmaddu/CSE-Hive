@@ -100,9 +100,8 @@ extra:
   social:
     - icon: fontawesome/brands/linkedin  
       link: https://www.linkedin.com/company/college-hives/
-    -icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/college.hive
-      
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/college.hive/  
   generator: false    
 
 
