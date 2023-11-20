@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+<!-- Announcement bar -->
+{% block announce %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  For updates follow us on 
+
+  <!-- instagram -->
+
+  <a href="https://www.instagram.com/college.hive/">
+    <span class="twemoji instagram">
+      {% include ".icons/fontawesome/brands/instagram.svg" %}
+    </span>
+    <strong>Instagram</strong>
+
+  </a>
+  and
+
+  <!-- linkedlin -->
+
+<a href="https://www.linkedin.com/company/college-hives/">
+    <span class="twemoji linkedin">
+      {% include ".icons/fontawesome/brands/linkedin.svg" %}
+    </span>
+    <strong>LinkedIn</strong>
+
+</a>
+
+.
+
+Check out our Fun time page for some fun stuff ,
+
+<a href="https://collegehive.in/Other/funtime.html">
+    <!-- fun related twemoji -->
+    <span class="twemoji fun">
+        <i class="fa fa-smile-o" aria-hidden="true"></i>
+    </span>
+    <strong>Fun Time</strong>
+</a>
+
+
+{% endblock %}
