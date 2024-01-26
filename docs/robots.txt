@@ -1,0 +1,1 @@
+sitemap: https://collegehive.in/sitemap.xml
