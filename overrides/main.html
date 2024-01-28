@@ -19,6 +19,8 @@
   </a>
   and
 
+
+
   <!-- linkedlin -->
 
 <a href="https://www.linkedin.com/company/college-hives/">
@@ -30,7 +32,7 @@
 </a>
 
 .
-
+  
 <!-- Check out our Fun time page for some fun stuff ,
 
 <a href="https://collegehive.in/Other/funtime.html">
@@ -39,6 +41,49 @@
     </span>
     <strong>Fun Time</strong>
 </a> -->
+
+
+<!-- just like dropdown button with list to select from,but make it as drop up button that is for choosing music type and a play pause button -->
+
+
+<!-- HTML -->
+
+<!-- HTML -->
+
+
+{% endblock %}
+
+
+{% block footer %}
+<div>
+  <a href="#" id="playPauseBtn" class="play">🎶</a>
+</div>
+
+<audio loop id="player">
+    <source src="https://collegehive-audio.s3.ap-south-1.amazonaws.com/lofi.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+{{ super() }}
+
+
+<style>
+
+</style>
+
+<script>// JavaScript
+  // JavaScript
+// JavaScript
+var player = document.getElementById('player');
+var playPauseBtn = document.getElementById('playPauseBtn');
+var isPlaying = true; // because the audio starts playing automatically
+
+playPauseBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  isPlaying = !isPlaying;
+  playPauseBtn.className = isPlaying ? 'pause' : 'play';
+  isPlaying ? player.play() : player.pause();
+});
+</script>
 
 
 {% endblock %}
