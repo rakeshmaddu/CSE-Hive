@@ -125,3 +125,35 @@ playPauseBtn.addEventListener('click', function() {
 
 
 {% endblock %}
+
+{% block footer %}
+<div id="shownhide" class="show">Hide</div>
+
+<style>
+  /* user selection diabled of shownhide button */
+  #shownhide {
+  display: inline-block;
+  width: 50px; /* Added fixed width to prevent size change */
+  user-select: none;
+  }
+</style>
+
+<script>
+var shownhide = document.getElementById('shownhide');
+var isShown = true;
+
+shownhide.addEventListener('click', function() {
+  isShown = !isShown;
+  if (isShown) {
+    document.getElementById("playPauseBtn").style.display = "block";
+    shownhide.textContent = 'Hide';
+  } else {
+    document.getElementById("playPauseBtn").style.display = "none";
+    shownhide.textContent = 'Show';
+  }
+});  
+</script>
+
+
+{{ super() }}
+{% endblock %}
