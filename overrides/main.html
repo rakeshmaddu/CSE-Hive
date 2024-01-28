@@ -54,14 +54,16 @@
 {% endblock %}
 
 
-{% block footer %}
+{% block content %}
+
+{{ super() }}
 <div id="playPauseBtn" class="play">🎶</div>
 
 <audio loop id="player">
     <source src="https://collegehive-audio.s3.ap-south-1.amazonaws.com/lofi.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-{{ super() }}
+
 
 <style>
 #playPauseBtn {
