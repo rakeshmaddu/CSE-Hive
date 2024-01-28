@@ -66,22 +66,61 @@
 {{ super() }}
 
 
-<style>
 
+<style>
+#playPauseBtn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  user-select: none; /* Prevent text selection */
+}
+
+#playPauseBtn:hover {
+  background-color: #45a049;
+}
+
+#playPauseBtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  /* Adding transition to the transform property for a smoother effect */
+  transition: transform 0.1s, box-shadow 0.1s;
+}
+
+/* Adding a class for the playing state to manage the appearance */
+.playing {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+}
 </style>
 
-<script>// JavaScript
-  // JavaScript
-// JavaScript
+<script>
 var player = document.getElementById('player');
 var playPauseBtn = document.getElementById('playPauseBtn');
-var isPlaying = true; // because the audio starts playing automatically
+var isPlaying = false;
 
 playPauseBtn.addEventListener('click', function(e) {
   e.preventDefault();
   isPlaying = !isPlaying;
-  playPauseBtn.className = isPlaying ? 'pause' : 'play';
-  isPlaying ? player.play() : player.pause();
+  if (isPlaying) {
+    player.play();
+    playPauseBtn.classList.add('playing');
+  } else {
+    player.pause();
+    playPauseBtn.classList.remove('playing');
+  }
+  // Toggle the appearance of the button depending on play state
+  playPauseBtn.textContent = isPlaying ? '⏸️' : '🎶';
 });
 </script>
 
